@@ -10,9 +10,9 @@ public_folder: /img
 site_url: https://app.netlify.com/sites/selling-site
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
+  - name: "starter"
+    label: "starter"
+    folder: "content/starter"
     format: "frontmatter"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
