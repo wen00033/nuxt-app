@@ -1,10 +1,11 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: wen00033/nuxt-app # Path to your GitHub repository
   branch: master # Branch to update (optional; defaults to master)
   open_authoring: false
 
 publish_mode: editorial_workflow
-media_folder: static/img
+media_folder: public/img
 public_folder: /img
 site_url: https://app.netlify.com/sites/selling-site
 
