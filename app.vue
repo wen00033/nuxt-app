@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <Header />
   </div>
 </template>
@@ -26,5 +26,10 @@ ol {
 
 body {
   font-family: sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  background-color: pink;
 }
 </style>
