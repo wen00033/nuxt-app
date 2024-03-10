@@ -1,3 +1,8 @@
 <template>
-  <h1>starter page</h1>
+  <NuxtLayout name="default">
+    <template #title> starter page </template>
+    <template #content>
+      <h2>starter page</h2>
+    </template>
+  </NuxtLayout>
 </template>

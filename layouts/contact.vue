@@ -7,7 +7,6 @@
 
 <script setup>
 import Headers from "../components/Header.vue";
-import { useMediaQuery } from "@vueuse/core";
 </script>
 
 <style>

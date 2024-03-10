@@ -1,8 +1,7 @@
 <template>
-  <NuxtLayout name="contact-layout">
+  <NuxtLayout name="contact">
     <template #content>
       <div class="contact-form">
-        <!-- <ClientOnly> -->
         <h1 class="title">Contact</h1>
         <UForm @submit="submit" :state="state">
           <UFormGroup label="Name" name="name">

@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout>
+  <NuxtLayout name="default">
     <template #title> Hello this is my home page </template>
     <template #content>
       <p>
@@ -13,6 +13,6 @@
 </template>
 
 <script setup>
-definePageMeta({ layout: "default" });
+// definePageMeta({ layout: "default" });
 // import Layout from "../layouts/default.vue";
 </script>

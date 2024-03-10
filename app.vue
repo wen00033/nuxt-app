@@ -1,7 +1,5 @@
 <template>
-  <div class="wrapper">
-    <NuxtPage />
-  </div>
+  <NuxtPage />
 </template>
 
 <script>
@@ -43,7 +41,7 @@ body {
   font-family: sans-serif;
 }
 
-.wrapper {
+#__nuxt {
   transition: all ease-out 0.2s;
   height: 100vh;
   background-color: pink;

@@ -1,3 +1,8 @@
 <template>
-  <h1>this is post page</h1>
+  <NuxtLayout name="default">
+    <template #title> This is a post page </template>
+    <template #content>
+      <h2>Post page</h2>
+    </template>
+  </NuxtLayout>
 </template>
