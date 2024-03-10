@@ -1,8 +1,12 @@
 <template>
-  <header class="header">
+  <header class="Mobile-header">
     <nav>
       <ul class="navigation">
-        <li v-for="(el, i) in navigation" :key="i">
+        <li
+          @click="$emit('close-navigation')"
+          v-for="(el, i) in navigation"
+          :key="i"
+        >
           <a :href="el.link">
             {{ el.name }}
           </a>
@@ -10,7 +14,12 @@
         <UAccordion :items="accordion" variant="link" color="white" size="xs">
           <template #menu>
             <!-- <ul class=""> -->
-            <li class="menu-link" v-for="(el, i) in menuNav" :key="i">
+            <li
+              @click="$emit('close-navigation')"
+              class="menu-link"
+              v-for="(el, i) in menuNav"
+              :key="i"
+            >
               <a :href="el.link">
                 {{ el.name }}
               </a>
@@ -30,10 +39,12 @@ const navigation = ref([
   { name: "News", link: "/post" },
   { name: "Contact", link: "/contact" },
 ]);
+
 const menuNav = ref([
   { name: "Starter", link: "/starter" },
   { name: "Main", link: "/main" },
 ]);
+
 const accordion = [
   {
     label: "Menu",
@@ -42,7 +53,6 @@ const accordion = [
     slot: "menu",
   },
 ];
-// const emit = defineEmits(["toggle"]);
 //   { name: "Starter", link: "/starter" },
 // { name: "Main", link: "/main" },
 </script>
@@ -74,7 +84,11 @@ header {
     }
   }
 }
-.header {
+
+.Mobile-header {
+  position: fixed;
+  z-index: 2;
+  inset: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;

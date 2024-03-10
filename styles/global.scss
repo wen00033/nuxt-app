@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all ease 0.3s;
+}
+
+a:hover {
+  color: #f00;
+  font-weight: bold;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#__nuxt {
+  transition: all ease-out 0.2s;
+  height: 100vh;
+  background-color: pink;
+  display: flex;
+}
+
+.toggle {
+  transition: all ease-out 0.2s;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background-color: white;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  cursor: pointer;
+  z-index: 1000;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.toggle:hover {
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+.toggle:active {
+  transform: scale(0.95);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}

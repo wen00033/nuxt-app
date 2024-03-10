@@ -11,8 +11,3 @@
     </template>
   </NuxtLayout>
 </template>
-
-<script setup>
-// definePageMeta({ layout: "default" });
-// import Layout from "../layouts/default.vue";
-</script>

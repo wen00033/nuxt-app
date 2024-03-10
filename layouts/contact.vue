@@ -1,13 +1,10 @@
 <template>
-  <Headers />
   <main class="contact-page">
     <slot name="content" />
   </main>
 </template>
 
-<script setup>
-import Headers from "../components/Header.vue";
-</script>
+<script setup></script>
 
 <style>
 .contact-page {

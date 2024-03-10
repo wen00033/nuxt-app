@@ -1,50 +1,34 @@
 <template>
+  <Headers v-if="isLargeScreen" />
+  <MobileHeadersVue
+    @close-navigation="closeToggle"
+    class="slideIn"
+    v-if="toggle && !isLargeScreen"
+  />
+
+  <div class="toggle" @click="toggleSidebar" v-if="!isLargeScreen">
+    <ArrowRightFromLine v-if="!toggle" />
+    <ArrowLeftToLine v-if="toggle" />
+  </div>
   <NuxtPage />
 </template>
 
-<script>
-/* import { Vueform } from "@vueform/nuxt"; */
+<script setup>
+import { ArrowRightFromLine, ArrowLeftToLine } from "lucide-vue-next";
+import Headers from "./components/Header.vue";
+import MobileHeadersVue from "./components/MobileHeaders.vue";
+const isLargeScreen = useMediaQuery("(min-width: 568px)");
+import { ref } from "vue";
+const toggle = ref(false);
+
+function closeToggle() {
+  toggle.value = false;
+}
+function toggleSidebar() {
+  toggle.value = !toggle.value;
+}
 </script>
 
 <style lang="scss">
-* {
-  padding: 0;
-  margin: 0;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  transition: all ease 0.3s;
-}
-
-a:hover {
-  color: #f00;
-  font-weight: bold;
-}
-
-body {
-  font-family: sans-serif;
-}
-
-#__nuxt {
-  transition: all ease-out 0.2s;
-  height: 100vh;
-  background-color: pink;
-  display: flex;
-}
+@import "./styles/style.scss";
 </style>
