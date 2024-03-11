@@ -1,11 +1,12 @@
 <template>
-  <Headers v-if="isLargeScreen" />
-  <MobileHeadersVue
-    @close-navigation="closeToggle"
-    class="slideIn"
-    v-if="toggle && !isLargeScreen"
-  />
-
+  <ClientOnly>
+    <Headers v-if="isLargeScreen" />
+    <MobileHeadersVue
+      @toggle-close="toggleClose"
+      :class="toggle ? 'slideIn' : 'slideOut'"
+      v-else
+    />
+  </ClientOnly>
   <div class="toggle" @click="toggleSidebar" v-if="!isLargeScreen">
     <ArrowRightFromLine v-if="!toggle" />
     <ArrowLeftToLine v-if="toggle" />
@@ -15,17 +16,16 @@
 
 <script setup>
 import { ArrowRightFromLine, ArrowLeftToLine } from "lucide-vue-next";
+import { ref } from "vue";
 import Headers from "./components/Header.vue";
 import MobileHeadersVue from "./components/MobileHeaders.vue";
 const isLargeScreen = useMediaQuery("(min-width: 568px)");
-import { ref } from "vue";
 const toggle = ref(false);
-
-function closeToggle() {
-  toggle.value = false;
-}
 function toggleSidebar() {
   toggle.value = !toggle.value;
+}
+function toggleClose() {
+  toggle.value = false;
 }
 </script>
 

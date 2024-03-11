@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout name="default">
-    <template #title> Hello this is my home page </template>
+    <template #title> Home</template>
     <template #content>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sit

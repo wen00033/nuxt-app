@@ -1,0 +1,46 @@
+header {
+  background-color: $primary;
+  color: white;
+  padding: 2rem;
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 10%;
+    justify-items: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    li {
+      transition: all ease-out 500ms;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      a {
+        font-size: 1.5rem;
+      }
+      &:hover {
+        color: $secondary;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  span {
+    transition: all ease-out 500ms;
+    font-size: 1.5rem;
+    font-family: "Tilt Warp", sans-serif;
+    &:hover {
+      color: $secondary;
+      transform: scale(1.2);
+    }
+  }
+}
+.menu-link {
+  text-align: center;
+  margin-block: 1.5rem;
+}

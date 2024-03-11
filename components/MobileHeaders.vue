@@ -2,27 +2,18 @@
   <header class="Mobile-header">
     <nav>
       <ul class="navigation">
-        <li
-          @click="$emit('close-navigation')"
-          v-for="(el, i) in navigation"
-          :key="i"
-        >
-          <a :href="el.link">
+        <li v-for="(el, i) in navigation" :key="i">
+          <NuxtLink @click="$emit('toggle-close')" :to="el.link">
             {{ el.name }}
-          </a>
+          </NuxtLink>
         </li>
         <UAccordion :items="accordion" variant="link" color="white" size="xs">
           <template #menu>
             <!-- <ul class=""> -->
-            <li
-              @click="$emit('close-navigation')"
-              class="menu-link"
-              v-for="(el, i) in menuNav"
-              :key="i"
-            >
-              <a :href="el.link">
+            <li class="menu-link" v-for="(el, i) in menuNav" :key="i">
+              <NuxtLink @click="$emit('toggle-close')" :to="el.link">
                 {{ el.name }}
-              </a>
+              </NuxtLink>
             </li>
             <!-- </ul> -->
           </template>
@@ -43,6 +34,7 @@ const navigation = ref([
 const menuNav = ref([
   { name: "Starter", link: "/starter" },
   { name: "Main", link: "/main" },
+  { name: "Drinks", link: "/drinks" },
 ]);
 
 const accordion = [

@@ -21,10 +21,12 @@ a {
   text-decoration: none;
   color: inherit;
   transition: all ease 0.3s;
+  font-family: "Tilt Warp", sans-serif;
+  letter-spacing: 2px;
 }
 
 a:hover {
-  color: #f00;
+  color: $secondary;
   font-weight: bold;
 }
 
@@ -35,7 +37,7 @@ body {
 #__nuxt {
   transition: all ease-out 0.2s;
   height: 100vh;
-  background-color: pink;
+  background-color: $secondary;
   display: flex;
 }
 
@@ -59,4 +61,38 @@ body {
 .toggle:active {
   transform: scale(0.95);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.pageTitle {
+  font-family: "Ribeye", serif;
+}
+
+.MenuTitle {
+  font-family: "Tilt Warp", sans-serif;
+}
+
+label {
+  font-family: "Tilt Warp", sans-serif;
+  font-size: 1.5rem;
+  margin-block: 0.5rem;
+}
+
+p {
+  font-family: "Museo Moderno", sans-serif;
+  font-size: 1.5rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+form > * {
+  margin-block: 1rem;
+}
+
+button {
+  background-color: $primary !important;
+
+  // font-family: "Museo Moderno", sans-serif !important;
 }

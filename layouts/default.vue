@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1 class="title">
+    <h1 class="pageTitle">
       <slot name="title" />
     </h1>
     <slot name="content" />

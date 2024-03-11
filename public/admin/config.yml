@@ -5,14 +5,14 @@ backend:
   open_authoring: false
 
 publish_mode: editorial_workflow
-media_folder: public/img
-public_folder: /img
+media_folder: content/img
+public_folder: content/public
 site_url: https://app.netlify.com/sites/selling-site
 
 collections:
   - name: "Post"
     label: "Post"
-    folder: "pages/post"
+    folder: "content/post"
     format: "frontmatter"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -22,10 +22,11 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "Starter"
     label: "Starter"
-    folder: "pages/starter"
+    folder: "content/starter"
     format: "frontmatter"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -35,10 +36,11 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "Main"
     label: "Main"
-    folder: "pages/main"
+    folder: "content/main"
     format: "frontmatter"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -49,9 +51,10 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
   - name: "Drinks"
     label: "Drinks"
-    folder: "pages/drinks"
+    folder: "content/drinks"
     format: "frontmatter"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -62,3 +65,4 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }

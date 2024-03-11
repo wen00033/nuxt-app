@@ -2,7 +2,7 @@
   <NuxtLayout name="contact">
     <template #content>
       <div class="contact-form">
-        <h1 class="title">Contact</h1>
+        <h1 class="pageTitle">Contact</h1>
         <UForm @submit="submit" :state="state">
           <UFormGroup label="Name" name="name">
             <UInput v-model="state.name" />
@@ -36,18 +36,3 @@ function submit() {
   }
 }
 </script>
-
-<style lang="scss">
-.contact-form {
-  padding: 3rem;
-  border-radius: 1rem;
-  background-color: wheat;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  .title {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 1rem;
-  }
-}
-</style>
-import type { ClientOnly } from '#build/components';

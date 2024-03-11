@@ -15,8 +15,10 @@
   }
 }
 .slideIn {
-  animation: slideIn 0.5s alternate;
+  animation: slideIn 0.5s;
+  transform: translate(0);
 }
 .slideOut {
-  animation: slideOut 0.5s alternate;
+  animation: slideOut 0.5s;
+  transform: translateX(-100%);
 }
