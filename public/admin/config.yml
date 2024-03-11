@@ -7,7 +7,7 @@ backend:
 publish_mode: editorial_workflow
 media_folder: content/img
 public_folder: content/public
-site_url: https://app.netlify.com/sites/selling-site
+site_url: https://selling-site.netlify.app/
 
 collections:
   - name: "Post"
