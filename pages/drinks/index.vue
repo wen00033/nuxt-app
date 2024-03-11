@@ -2,10 +2,17 @@
   <NuxtLayout name="default">
     <template #title> Drinks </template>
     <template #content>
-      <ul>
-        <li v-for="drink in list">
+      <ul class="menu-item-container">
+        <li class="menu-item" v-for="drink in list">
           {{ console.log(drink) }}
-          <h3>{{ drink.title }}</h3>
+          <img class="menu-image" :src="drink.thumbnail" alt="drink" />
+          <div>
+            <p class="MenuTitle">{{ drink.title }}</p>
+            <h3>
+              <em>{{ drink.description }}</em>
+            </h3>
+          </div>
+          <p class="pageTitle">${{ drink.price }}</p>
         </li>
       </ul>
     </template>

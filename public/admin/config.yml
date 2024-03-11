@@ -38,7 +38,6 @@ collections:
       - { label: "price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
   - name: "Main"
     label: "Main"
     folder: "content/main"
@@ -52,7 +51,6 @@ collections:
       - { label: "Publish Date", name: "date", widget: "hidden" }
       - { label: "price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
   - name: "Drinks"
     label: "Drinks"
@@ -67,5 +65,4 @@ collections:
       - { label: "price", name: "price", widget: "number" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Publish Date", name: "date", widget: "hidden" }
