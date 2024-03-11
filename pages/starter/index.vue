@@ -3,7 +3,7 @@
     <template #title> starter </template>
     <template #content>
       <ul class="menu-item-container">
-        <li class="menu-item" v-for="starter in list">
+        <li class="menu-item" v-for="(starter, i) in list" :key="i">
           <img class="menu-image" :src="starter.thumbnail" alt="starter" />
           <div>
             <p class="MenuTitle">{{ starter.title }}</p>

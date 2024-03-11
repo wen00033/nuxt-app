@@ -3,8 +3,7 @@
     <template #title> Drinks </template>
     <template #content>
       <ul class="menu-item-container">
-        <li class="menu-item" v-for="drink in list">
-          {{ console.log(drink) }}
+        <li class="menu-item" v-for="(drink, i) in list" :key="i">
           <img class="menu-image" :src="drink.thumbnail" alt="drink" />
           <div>
             <p class="MenuTitle">{{ drink.title }}</p>
@@ -22,9 +21,4 @@
 <script setup>
 const contentQuery = queryContent("drinks");
 const list = await contentQuery.find();
-// const { data } = await useAsyncData("home", () =>
-//   queryContent("drinks").findOne()
-// );
-// const contentQuery = queryContent("drinks");
-console.log(list);
 </script>
