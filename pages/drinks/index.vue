@@ -2,9 +2,22 @@
   <NuxtLayout name="default">
     <template #title> Drinks </template>
     <template #content>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab minima non
-      totam, maiores natus animi illum expedita, soluta temporibus laboriosam
-      corrupti minus rerum, ducimus est quisquam quas fugiat ea id?
+      <ul>
+        <li v-for="drink in list">
+          {{ console.log(drink) }}
+          <h3>{{ drink.title }}</h3>
+        </li>
+      </ul>
     </template>
   </NuxtLayout>
 </template>
+
+<script setup>
+const contentQuery = queryContent("drinks");
+const list = await contentQuery.find();
+// const { data } = await useAsyncData("home", () =>
+//   queryContent("drinks").findOne()
+// );
+// const contentQuery = queryContent("drinks");
+console.log(list);
+</script>

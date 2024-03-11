@@ -50,6 +50,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "hidden" }
+      - { label: "price", name: "price", widget: "number" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
@@ -63,7 +64,8 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "hidden" }
+      - { label: "price", name: "price", widget: "number" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Publish Date", name: "date", widget: "hidden" }
