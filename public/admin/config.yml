@@ -2,11 +2,12 @@ backend:
   name: github
   repo: wen00033/nuxt-app # Path to your GitHub repository
   branch: master
+  base_url: https://selling-site.netlify.app
 
 publish_mode: editorial_workflow
 media_folder: content/img
 public_folder: content/public
-site_url: https://selling-site.netlify.app/
+site_url: https://selling-site.netlify.app
 
 collections:
   - name: "Post"
