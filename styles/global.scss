@@ -22,7 +22,8 @@ a {
   color: inherit;
   transition: all ease 0.3s;
   font-family: "Tilt Warp", sans-serif;
-  letter-spacing: 2px;
+  font-size: 1.6rem;
+  // letter-spacing: px;
 }
 
 a:hover {
@@ -84,7 +85,7 @@ p {
 
 h1 {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 form > * {
@@ -93,6 +94,9 @@ form > * {
 
 button {
   background-color: $primary !important;
-
-  // font-family: "Museo Moderno", sans-serif !important;
+}
+@media screen and (min-width: 568px) {
+  h1 {
+    font-size: 3rem;
+  }
 }

@@ -1,0 +1,27 @@
+.blog-img {
+  margin: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  width: 50%;
+}
+
+.blog-paragraph::first-letter {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $primary;
+  float: left;
+}
+
+@media screen and (min-width: 568px) {
+  .blog-img {
+    margin: 1rem;
+    float: left;
+  }
+
+  .blog-container::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}

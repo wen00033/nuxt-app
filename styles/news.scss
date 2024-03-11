@@ -1,0 +1,8 @@
+.news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  li {
+    border-bottom: 3px solid $tertiary;
+  }
+}

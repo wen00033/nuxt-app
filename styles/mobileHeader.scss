@@ -1,5 +1,5 @@
 header {
-  background-color: $primary;
+  background-color: #333;
   color: white;
   padding: 2rem;
   ul {
@@ -18,13 +18,17 @@ header {
         font-size: 1.5rem;
       }
       &:hover {
-        color: $secondary;
+        color: #f00;
         transform: scale(1.2);
       }
     }
   }
 }
-.header {
+
+.Mobile-header {
+  position: fixed;
+  z-index: 2;
+  inset: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,9 +37,8 @@ header {
   span {
     transition: all ease-out 500ms;
     font-size: 1.5rem;
-    font-family: "Tilt Warp", sans-serif;
     &:hover {
-      color: $secondary;
+      color: #f00;
       transform: scale(1.2);
     }
   }
@@ -43,8 +46,8 @@ header {
 .menu-link {
   text-align: center;
   margin-block: 1.5rem;
-  span {
-    // font-size: 1.5rem;
-    font-family: "Tilt Warp", sans-serif !important;
-  }
+}
+
+button span {
+  font-family: "Tilt Warp", sans-serif !important;
 }
