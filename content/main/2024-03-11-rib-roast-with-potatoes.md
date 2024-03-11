@@ -1,5 +1,6 @@
 ---
 title: Rib Roast with Potatoes
+price: 22
 description: Rib Roast with Potatoes
 thumbnail: https://images.pexels.com/photos/16400932/pexels-photo-16400932/free-photo-of-rib-roast-with-potatoes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 ---
