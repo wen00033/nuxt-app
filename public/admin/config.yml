@@ -2,8 +2,6 @@ backend:
   name: github
   repo: wen00033/nuxt-app # Path to your GitHub repository
   branch: master
-  squash_merges: true # Branch to update (optional; defaults to master)
-  open_authoring: false
 
 publish_mode: editorial_workflow
 media_folder: content/img
