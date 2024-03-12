@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   colorMode: {
     preference: "light",
   },
-  content:{
-    dir: 'content'
-  }
+  content: {
+    dir: "content",
+  },
 });
