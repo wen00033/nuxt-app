@@ -8,4 +8,5 @@ export default defineNuxtConfig({
   content: {
     dir: "content",
   },
+  target: "static",
 });
