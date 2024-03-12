@@ -1,6 +1,6 @@
 # example netlify.toml
 [build]
-  command = "npm run generate"
+  command = "nuxt build --spa"
   functions = "netlify/functions"
   publish = "dist"
 
