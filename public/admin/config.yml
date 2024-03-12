@@ -4,8 +4,8 @@ backend:
   branch: master
 
 publish_mode: editorial_workflow
-media_folder: public/images
-public_folder: content/images
+media_folder: nuxt/images
+public_folder: /images
 site_url: https://selling-site.netlify.app
 
 collections:
