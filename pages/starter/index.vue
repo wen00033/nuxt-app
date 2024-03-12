@@ -21,9 +21,4 @@
 <script setup>
 const contentQuery = queryContent("starter");
 const list = await contentQuery.find();
-// const { data } = await useAsyncData("home", () =>
-//   queryContent("drinks").findOne()
-// );
-// const contentQuery = queryContent("drinks");
-console.log(list);
 </script>
