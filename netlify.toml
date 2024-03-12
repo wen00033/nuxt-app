@@ -19,5 +19,5 @@
   #  publish = "dist" # Folder with the static content for _redirect file
 
   ## more info on configuring this file: https://ntl.fyi/file-based-build-config
-[functions]
- included_files = ["./content/**/*.md"]
+[images]
+  remote_images = ["https://ik.imagekit.io/vv1aehisp/.*"]

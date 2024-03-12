@@ -6,6 +6,7 @@
         <template #default="{ list }">
           <ul class="menu-item-container">
             <li class="menu-item" v-for="(main, i) in list" :key="i">
+              {{ console.log(main.thumbnail) }}
               <img class="menu-image" :src="main.thumbnail" alt="main" />
               <div>
                 <p class="MenuTitle">{{ main.title }}</p>
