@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: wen00033/nuxt-app # Path to your GitHub repository
   branch: master
 
