@@ -20,4 +20,4 @@
 
   ## more info on configuring this file: https://ntl.fyi/file-based-build-config
 [functions]
- included_files = ["content/*.md"]
+ included_files = ["content/**/*.md"]
