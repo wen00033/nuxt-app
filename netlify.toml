@@ -20,4 +20,5 @@
 
   ## more info on configuring this file: https://ntl.fyi/file-based-build-config
 [functions]
- included_files = ["content/**/*.md"]
+ node_bundler = "esbuild"
+ included_files = ["./content/**/*.md"]
