@@ -19,9 +19,6 @@
 </template>
 
 <script setup>
-const { }
-
-
 const contentQuery = queryContent("drinks");
 const list = await contentQuery.find();
 </script>
