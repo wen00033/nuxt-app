@@ -3,7 +3,7 @@
     <template #title>Best Italian Food in town!</template>
     <template #content>
       <div>
-        <img src="/logo.svg" alt="svg" />
+        <img class="logo" src="/logo.svg" alt="svg" />
       </div>
       <div class="homepage-content">
         <div>

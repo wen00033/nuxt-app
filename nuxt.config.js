@@ -9,4 +9,10 @@ export default defineNuxtConfig({
     dir: "content",
   },
   target: "static",
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 });
