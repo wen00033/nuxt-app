@@ -1,13 +1,22 @@
 <template>
   <NuxtLayout name="homepage">
-    <template #title> Home</template>
+    <template #title>Best Italian Food in town!</template>
     <template #content>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sit
-        ex repellendus vitae, ducimus maxime eius excepturi ullam veritatis
-        animi, perferendis doloremque impedit illo, aliquid nemo cum unde
-        nesciunt possimus!
-      </p>
+      <div>
+        <img src="/logo.svg" alt="svg" />
+      </div>
+      <div class="homepage-content">
+        <div>
+          <p>Monday - Friday: 07:00 - 22:00</p>
+          <p>Saturday: 11:00 - 24:00</p>
+          <p>Sunday: Closed</p>
+        </div>
+        <div>
+          <p>Address: 1234 Main Street, New York, NY 10001</p>
+          <p>Phone: +1 123 456 7890</p>
+          <p>Email:benji@gmail.com</p>
+        </div>
+      </div>
     </template>
     <template #video>
       <video autoplay loop muted>

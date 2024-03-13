@@ -30,3 +30,21 @@
 .scrollable::-webkit-scrollbar {
   display: none;
 }
+
+.homepage-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.homepage-content div {
+  border-radius: 1rem;
+  border: 2px solid $primary;
+  padding: 1rem;
+}
+
+.homepage-content p {
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Tilt Warp";
+}

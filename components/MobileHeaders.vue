@@ -20,6 +20,8 @@
         </UAccordion>
       </ul>
     </nav>
+    <img class="spice" src="/spice.svg" alt="spice" />
+    <img class="pepper" src="/pepper.svg" alt="pepper" />
   </header>
 </template>
 

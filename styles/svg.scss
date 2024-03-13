@@ -1,0 +1,51 @@
+.spice {
+  position: absolute;
+  top: 0;
+  left: 0;
+  aspect-ratio: 1;
+  width: 20rem; // width: 5rem;
+}
+
+.pepper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  aspect-ratio: 1;
+  width: 15rem;
+  animation: bounce 400ms infinite alternate-reverse; // width: 5rem;
+}
+
+.fork {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  aspect-ratio: 1;
+  width: 15rem; // width: 5rem;
+  animation: rotate 400ms infinite alternate-reverse;
+}
+
+.cheese {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  aspect-ratio: 1;
+  width: 15rem;
+  animation: bounce 400ms infinite alternate-reverse;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(15deg);
+  }
+  to {
+    transform: rotate(-15deg);
+  }
+}
+@keyframes bounce {
+  from {
+    transform: translate(0px, 20px);
+  }
+  to {
+    transform: translate(0px);
+  }
+}

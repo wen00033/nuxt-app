@@ -3,7 +3,7 @@
     <!-- <template #title>title</template> -->
     <template #content>
       <ContentDoc v-slot="{ doc }">
-        <h1 class="pageTitle">{{ doc.title }}</h1>
+        <p class="pageTitle">{{ doc.title }}</p>
         <p>
           Post Date: <strong>{{ doc.date.slice(0, 10) }}</strong>
         </p>
