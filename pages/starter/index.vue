@@ -4,7 +4,8 @@
     <template #content>
       <ContentList path="/starter">
         <template #default="{ list }">
-          <ul class="menu-item-container">
+          <!-- <div class="scrollable"> -->
+          <ul class="menu-item-container scrollable">
             <li class="menu-item" v-for="(starter, i) in list" :key="i">
               <img class="menu-image" :src="starter.thumbnail" alt="starter" />
               <div>
@@ -16,6 +17,7 @@
               <p class="pageTitle">${{ starter.price }}</p>
             </li>
           </ul>
+          <!-- </div> -->
         </template>
 
         <template #not-found>

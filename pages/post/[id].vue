@@ -7,7 +7,7 @@
         <p>
           Post Date: <strong>{{ doc.date.slice(0, 10) }}</strong>
         </p>
-        <div class="blog-container">
+        <div class="blog-container scrollable">
           <img class="blog-img" :src="doc.thumbnail" alt="image" />
           <p class="blog-paragraph">
             <ContentRenderer :value="doc"></ContentRenderer>

@@ -40,6 +40,25 @@ body {
   height: 100vh;
   background-color: $secondary;
   display: flex;
+  overflow: hidden;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+main {
+  position: relative;
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .toggle {
@@ -98,5 +117,8 @@ button {
 @media screen and (min-width: 568px) {
   h1 {
     font-size: 3rem;
+  }
+  video {
+    width: 33.33%;
   }
 }
