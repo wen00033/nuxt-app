@@ -10,7 +10,7 @@
           <UFormGroup label="Email" name="email">
             <UInput v-model="state.email" />
           </UFormGroup>
-          <UFormGroup name="textarea" label="Textarea">
+          <UFormGroup name="textarea" label="Message">
             <UTextarea v-model="state.textarea" />
           </UFormGroup>
           <UButton type="submit" @click="submit"> Submit </UButton>
