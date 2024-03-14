@@ -19,7 +19,6 @@
       </ul>
     </nav>
     <img class="fork" src="/fork.svg" alt="fork" />
-    <img class="cheese" src="/cheese.svg" alt="cheese" />
   </header>
 </template>
 

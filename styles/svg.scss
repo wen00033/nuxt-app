@@ -26,11 +26,11 @@
 
 .cheese {
   position: absolute;
-  bottom: 50px;
-  left: 50px;
+  bottom: 0px;
+  left: 0px;
   aspect-ratio: 1;
   width: 15rem;
-  animation: bounce 400ms infinite alternate-reverse;
+  animation: rotate 400ms infinite alternate-reverse;
 }
 
 .logo {
